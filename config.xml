@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns = "http://www.w3.org/ns/widgets" xmlns:gap = "http://phonegap.com/ns/1.0" id = "com.bigdogarcade" version = "1.0.0">
+<widget xmlns = "http://www.w3.org/ns/widgets" xmlns:gap = "http://phonegap.com/ns/1.0" id = "com.bigdogmultimedia.jumping-bird" version = "1.0.0">
 <name>Jumping Bird</name>
 <description>This is my first phonegap build project using my Jumping Bird game. Built for my iPhone 4S</description>
-<author href="http://www.bigdogarcade.com" email="rod@prowebmaker.com">Rod Snyder</author>
+<author href="http://jumping-bird.bigdogmultimedia.com" email="rod@prowebmaker.com">Roderick Snyder</author>
 <feature name="http://api.phonegap.com/1.0/device" />
 <preference name="phonegap-version" value="2.1.0" />
 <preference name="orientation" value="portrait" />

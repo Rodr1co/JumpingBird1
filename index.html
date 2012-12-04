@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html manifest="jumpingbird.appcache">
 <head>
+<!-- saved from url=(0013)about:internet -->
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 <meta name = "viewport" content = "initial-scale = 1.0, user-scalable = no">
+<link rel="apple-touch-icon-precomposed" href="assets/touch-icon-iphone.png" /> 
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/touch-icon-ipad.png" /> 
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/touch-icon-iphone4.png" /> 
 <title>Jumping Bird</title>
 <script>
 document.ontouchmove = function(e) {
@@ -41,9 +45,9 @@ GameStart();
 }
 </script>
 <style>
-body { margin: 0px; padding: 0px; text-align: center; }
+body { margin: 0px; padding: 0px; text-align: center; background: #000; }
 canvas { outline: 0; border: 1px solid #000; margin: 0px auto; background: #1b5ae5 url('assets/startscreen.png') no-repeat 0 0; height: 460px; width: 320px; }
-#playnow { display: block; height: 42px; width: 200px; margin: 0px auto; padding: 0; position: relative; top: -50px; }
+#playnow { display: none; height: 42px; width: 200px; margin: 0px auto; padding: 0; position: relative; top: -50px; border: 0; }
 </style>
 </head>
 <body>
@@ -350,6 +354,7 @@ ctx.fillText("YOUR RESULT: " + points, 90, 400);
 }, 100);
 };
 var GameStart = function(){
+document.getElementById('playnow').style.display = 'block';
 if(localStorage){
 birdscore = localStorage.getItem('birdscore');
 if(birdscore == null || birdscore == '' || birdscore < 1)
@@ -372,6 +377,6 @@ ctx.fillText("HIGH SCORE: " + birdscore, 20, 20);
 };
 </script>
 <a href="#" id="playnow" onfocus="this.blur()">
-<img src="assets/playnow.png"></a>
+<img src="assets/playnow.png" style="border: 0;"></a>
 </body>
 </html>
